@@ -3,8 +3,8 @@
 var mongoose = require('mongoose');
 
 const categorySchema = mongoose.Schema({
-    name: {type: name, required: true},
-    page: {type: String}
+    name: {type: String, required: true},
+    page: {type: Array, required: true}
 });
 
-module.exports('Category',categorySchema);
+module.exports= mongoose.model('Category',categorySchema);
